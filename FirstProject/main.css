@@ -84,6 +84,12 @@ a:focus{
 	float: left;
 	transition: 1.2s all;
 }
+.icon{
+	display: none;
+}
+.iconC{
+	display: block;
+}
 .elmenu{
 	display: block;
 	float: left;
@@ -100,7 +106,7 @@ a:focus{
     display: inline-block;
 	border-left: 5px solid #71736b;
 	border-right: 5px solid #71736b;
-	transition: 1s all;
+	transition: 0.78s all;
 }
 .elmenu:hover{
 	cursor: pointer;
@@ -122,9 +128,9 @@ a:focus{
 	width: 75%;
 	margin-left: auto;
 	margin-right: auto;
-	margin-top: 100px;
+	margin-top: 0px;
 	color: white;
-	padding-top: 30px;
+	padding-top: 50px;
 	font-family: 'PoiretOne';
 }
 .img{
@@ -143,6 +149,7 @@ a:focus{
 	float: left;
 	margin-right: 20px;
 	margin-bottom: 0px;
+	padding: 0px;
 }
 .imgdiv-l{
 	width: 90%;
@@ -163,6 +170,12 @@ a:focus{
 	width: 45%;
 	margin-left: 25px;
 }
+.con-h2{
+	text-align: left;
+	font-size: 30px;
+	width: 45%;
+	margin-left: 25px;
+}
 .con-p-span{
 	width: 25px;
 }
@@ -171,6 +184,7 @@ a:focus{
 	font-size: 20px;
 	margin-left: 0px;
 	text-align: justify;
+	margin-top: 5px;
 }
 
 /*footer*/
