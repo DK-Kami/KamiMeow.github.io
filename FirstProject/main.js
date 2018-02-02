@@ -3,7 +3,6 @@ var cont = ["<div class='imgdiv'><img class='img' src='images/1.jpg' alt='Фот
 "baka"
 ];
 function ComePage1() {
-    alert("BAKA!!");
     $('#content').html(cont[0]);
 };
 function ComePage2() {
