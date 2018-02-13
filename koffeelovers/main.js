@@ -16,14 +16,7 @@ function ComePage3() {
 
 window.onload = function() {
     ComePage1();
-    //upFixed();
 }
-/*????????????????
-function upFixed() {
-    var heig = document.getElementById("content").offsetHeight;
-    document.getElementById("panel").style.height = heig;
-}
-?????????????????*/
 var karusel = {
     slides: ['images/1.1.jpg', 'images/1.2.jpg', 'images/1.3.jpg', 'images/1.4.jpg', 'images/1.5.jpg', 'images/1.6.jpg', 'images/1.7.jpg', 'images/1.8.jpg', 'images/1.9.jpg', 'images/1.10.jpg', 'images/1.11.jpg'],
     kadr: 0,
