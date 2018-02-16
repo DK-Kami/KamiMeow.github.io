@@ -1,10 +1,10 @@
 @font-face {
     font-family: "OpenSans";
-    src: url('KamiMeow.github.io/fonts/OpenSans_L/OpenSans-Regular.ttf');
+    src: url('fonts/OpenSans-Regular.ttf');
 }
 @font-face {
     font-family: "Mont";
-    src: url('KamiMeow.github.io/fonts/Montserrat_L/Montserrat-Regular.ttf');
+    src: url('fonts/Montserrat-Regular.ttf');
 }
 body{
     background-color: #a0a0a0;
