@@ -8,6 +8,7 @@
 }
 body{
     background-color: #a0a0a0;
+    min-width: 320px;
 }
 hr{
     margin-top: 25px;
@@ -72,6 +73,9 @@ hr{
     display: none;
 }
 .mapsm{
+    display: none;
+}
+.mapmx{
     display: none;
 }
 .container{
@@ -241,7 +245,7 @@ hr{
         font-size: 22px;
     }
 }
-@media (max-width: 768px) {
+@media (max-width: 1040px) {
     .maplg{
         display: none;
     }
@@ -251,9 +255,6 @@ hr{
     .map{
         width: 720px;
         height: 360px;
-    }
-    .patch1{
-        width: 100%;
     }
     .about{
         width: 100%;
@@ -277,17 +278,81 @@ hr{
         top: -20px;
     }
 }
-@media (max-width: 425px) {
+@media (max-width: 900px) {
+    .patch1{
+        width: 100%;
+    }
+}
+@media (max-width: 750px) {
+    .mapmd{
+        display: none;
+    }
+    .mapsm{
+        display: block;
+    }
+    .map{
+        width: 480px;
+        height: 320px;
+    }
+}
+@media (max-width: 665px) {
+    .text{
+        font-size: 14px;
+        text-align: justify;
+        margin-bottom: 0px;
+    }
+    .hide{
+        /* margin-left: 100px; */
+        width: 100%;
+        position: relative;
+        margin-left: 0px;
+        margin-right: 0px;
+        top: 5px;
+    }
+    .iconF{
+        width: 15px;
+        padding-right: 30px;
+    }
+    .hide > div{
+        width: 50%;
+        padding-bottom: 0px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .phone{
+        margin-top: 20px;
+        width: 100%;
+        top: 0px;
+        /* text-align: center; */
+    }
+    .phone > div{
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .callUs{
+        margin-bottom: 10px;
+    }
+}
+@media (max-width: 545px) {
     .da-slider{
         display: none;
     }
     .imgdiv{
         width: 90%;
     }
-    .mapmd{
+    .hide > div{
+        width: 65%;
+    }
+    .phone > div{
+        width: 65%;
+    }
+}
+@media (max-width: 510px) {
+    .mapsm{
         display: none;
     }
-    .mapsm{
+    .mapmx{
         display: block;
     }
     .map{
@@ -301,34 +366,18 @@ hr{
         display: block;
         width: 100%;
     }
-    .text{
-        width: 100%;
-        font-size: 14px;
-        text-align: justify;
-        margin-bottom: 0px;
-    }
-    .hide{
-        /* margin-left: 100px; */
-        width: 85%;
-        position: relative;
-        margin-left: auto;
-        margin-right: auto;
-        top: 5px;
-    }
-    .iconF{
-        width: 15px;
-        padding-right: 30px;
-    }
     .hide > div{
-        padding-bottom: 0px;
+        width: 75%;
     }
-    .phone{
-        margin-top: 20px;
-        width: 100%;
-        top: 0px;
-        text-align: center;
+    .phone > div{
+        width: 75%;
     }
-    .callUs{
-        margin-bottom: 10px;
+}
+@media (max-width: 360px) {
+    .hide > div{
+        width: 85%;
+    }
+    .phone > div{
+        width: 85%;
     }
 }
