@@ -23,3 +23,7 @@ function Show3() {
 function Show4() {
     document.getElementById("Prof4").className = "bio"
 }
+
+window.onload = function() {
+    document.getElementById("onload").className = "none"
+}

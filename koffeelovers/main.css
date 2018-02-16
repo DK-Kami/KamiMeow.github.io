@@ -15,7 +15,7 @@ html{
 	margin: 0px;
 }
 body{
-	background-color: #3c3c3c;
+	background-color: #252323;
 	padding: 0px;
 	margin: 0px;
 	font-family: 'PoiretOne';
@@ -256,13 +256,14 @@ a:focus{
 }
 .title{
 	font-size: 28px;
-	top: -20px;
+	top: -15px;
 	text-align: center;
 	position: relative;
 }
 .text{
 	text-align: center;
 	font-size: 22px;
+	margin-bottom: 20px;
 }
 
 .phone{
@@ -281,4 +282,12 @@ a:focus{
 .tell{
 	padding-top: 5px;
 	font-size: 25px;
+}
+
+/* @keyframes slider {
+	0%
+} */
+
+@media (max-width: ) {
+
 }
