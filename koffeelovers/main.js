@@ -17,8 +17,8 @@ function ComePage3() {
 window.onload = function() {
     ComePage1();
 }
-/*var karusel = {
-    slides: ['images/1.1.jpg', 'images/1.2.jpg', 'images/1.3.jpg', 'images/1.4.jpg', 'images/1.5.jpg', 'images/1.6.jpg', 'images/1.7.jpg', 'images/1.8.jpg', 'images/1.9.jpg', 'images/1.10.jpg', 'images/1.11.jpg'],
+var karusel = {
+    slides: ['../images/1.1.jpg', '../images/1.2.jpg', '../images/1.3.jpg', '../images/1.4.jpg', '../images/1.5.jpg', '../images/1.6.jpg', '../images/1.7.jpg', '../images/1.8.jpg', '../images/1.9.jpg', '../images/1.10.jpg', '../images/1.11.jpg'],
     kadr: 0,
     set: function(image){
         $("#karusel").html("<img class='img-l' src="+this.slides[this.kadr]+"></img>");
@@ -32,7 +32,7 @@ window.onload = function() {
         if (this.kadr == 10) this.kadr = 0;
         this.set(this.slides[this.kadr]);
     }
-}*/
+}
 
 $(window).load(function(){
     $('a[href*=#]').click(function(event){
