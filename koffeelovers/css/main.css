@@ -1,14 +1,14 @@
 @font-face{
 	font-family: 'OpenSans';
-	src: url('/fonts/OpenSans-Regular.ttf');
+	src: url('fonts/OpenSans-Regular.ttf');
 }
 @font-face {
     font-family: 'PoiretOne';
-	src: url('/fonts/PoiretOne-Regular.ttf');
+	src: url('fonts/PoiretOne-Regular.ttf');
 }
 @font-face {
     font-family: 'Gilda';
-	src: url('/fonts/GildaDisplay-Regular.ttf');
+	src: url('fonts/GildaDisplay-Regular.ttf');
 }
 html{
 	padding: 0px;
@@ -288,6 +288,6 @@ a:focus{
 	0%
 } */
 
-@media (max-width: ) {
+@media (max-width: 1200px) {
 
 }
