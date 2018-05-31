@@ -1,0 +1,516 @@
+/*FONTS*/
+
+@font-face {
+    font-family: "Mont Reg";
+    src: url("fonts/Montserrat/Montserrat-Medium.ttf");
+}
+
+@font-face {
+    font-family: "Mont Bold";
+    src: url("fonts/Montserrat/Montserrat-Bold.ttf");
+}
+
+@font-face {
+    font-family: "Mont Light";
+    src: url("fonts/Montserrat/Montserrat-Light.ttf");
+}
+
+@font-face {
+    font-family: "PT Serif";
+    src: url("fonts/PTSerif/PTF55F.ttf");
+}
+
+@font-face {
+    font-family: "Quite";
+    src: url("fonts/Quite_Chocolatey/Quite Chocolatey.ttf");
+}
+
+@font-face {
+    font-family: "Couture";
+    src: url("fonts/Couture_Bold/COUTURE-Bold.ttf");
+}
+
+
+/*MAIN*/
+
+body,
+div,
+header {
+    margin: 0px;
+    padding: 0px;
+}
+
+body,
+header,
+.content,
+footer {
+    float: left;
+    width: 100%;
+}
+
+img {
+    width: 100%;
+    pointer-events: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+a,
+a:visited,
+a:focus,
+a:active,
+a:hover {
+    outline: none;
+    offset: none;
+    text-decoration: none;
+    color: rgb(165, 26, 14);
+}
+
+a:hover {
+    color: rgb(139, 21, 10);
+}
+
+.button {
+    width: 100%;
+    height: 62px;
+    border: none;
+    border-radius: 5px;
+    font-family: "Mont Reg";
+    font-size: 22px;
+    color: #eee;
+    background-color: #C62314;
+    overflow: hidden;
+    text-align: center;
+    line-height: 62px;
+    cursor: pointer;
+}
+
+.button>div {
+    width: 100%;
+    height: 62px;
+    position: relative;
+    top: -62px;
+    transition: .2s;
+}
+
+.red {
+    background-color: #C62314;
+}
+
+.dark {
+    background-color: #313132;
+}
+
+.button:hover>div {
+    top: 0;
+    transition: .2s;
+}
+
+.button>input[type="submit"] {
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    padding: 20px 0;
+    font-family: "Mont Reg";
+    font-size: 22px;
+    color: #fff;
+}
+
+.button>input[type="submit"]:focus,
+.button>input[type="submit"]:active {
+    offset: none;
+    border: none;
+    outline-offset: 0;
+    box-shadow: none;
+    outline: none;
+}
+
+
+/*HEADER*/
+
+header {
+    width: 100%;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.head-bg {
+    position: absolute;
+    width: 100%;
+}
+
+.scribe {
+    width: 100%;
+    padding: 0 5%;
+}
+
+.logo {
+    width: 20%;
+    margin: 2%;
+    margin-right: 7%;
+    font-family: "Quite";
+    color: white;
+    font-size: 88px;
+    position: relative;
+    float: left;
+}
+
+nav {
+    font-family: "Mont Reg";
+    font-size: 20px;
+    text-align: center;
+    width: 50%;
+    margin: 50px 0 150px 175px;
+    float: left;
+    clear: right;
+    position: relative;
+}
+
+.el-menu {
+    margin-left: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    float: left;
+    cursor: pointer;
+    color: #fff;
+    transition: .3s;
+}
+
+.active {
+    background-color: rgb(9, 12, 43);
+}
+
+.el-menu:hover {
+    background-color: rgb(9, 12, 43);
+    transition: .4s;
+}
+
+.active:hover {
+    background-color: rgb(9, 36, 75);
+}
+
+.head-text {
+    width: 40%;
+    margin: 0 2%;
+    position: relative;
+    clear: both;
+    float: left;
+}
+
+.slogo-p1,
+.slogo-p2 {
+    width: 100%;
+    color: rgb(9, 12, 43);
+    font-family: "Mont Bold";
+    font-size: 90px;
+    clear: both;
+}
+
+.slogo-p2 {
+    color: #fff;
+}
+
+.post-slogo {
+    width: 100%;
+    clear: both;
+    font-family: "PT Serif";
+    font-size: 20px;
+    color: #fff;
+    margin: 5% 2%;
+}
+
+.form {
+    width: 30%;
+    margin-top: 25px;
+    margin-left: 100px;
+    padding: 0 50px;
+    position: relative;
+    background-color: #fff;
+    border-radius: 5px;
+    float: left;
+    color: #323132;
+    box-shadow: 0px 0px 40px;
+}
+
+.form-head {
+    font-family: "Mont Reg";
+    text-align: center;
+    font-size: 22px;
+    margin: 25px 0;
+    color: inherit;
+}
+
+.input-text {
+    padding: 10px 0;
+    width: 90%;
+    padding-left: 5%;
+}
+
+.input-text>input[type="text"] {
+    position: relative;
+    width: 100%;
+    left: -15px;
+    border: none;
+    border-radius: 5px;
+    padding: 15px;
+    background-color: #eee;
+    font-size: 25px;
+    font-family: "PT Serif";
+    color: inherit;
+}
+
+.input-text>input[type="text"]:focus {
+    outline: none;
+}
+
+.check-text {
+    font-family: "PT Serif";
+    font-size: 20px;
+    color: inherit;
+}
+
+.check {
+    width: 100%;
+    padding-top: 10px;
+}
+
+.check>input[type="checkbox"] {
+    border-radius: 5px;
+    border: none;
+    margin-right: 15px;
+    box-shadow: none;
+    background-color: #eee;
+    offset: none;
+    padding: 50px;
+    position: relative;
+}
+
+.check>input[type="checkbox"]:focus {
+    offset: none;
+}
+
+.submit {
+    text-align: center;
+    margin: 25px 0;
+}
+
+
+/*CONTENT*/
+
+.our-services,
+.history,
+.pricing,
+.testimonial {
+    width: 90%;
+    padding: 0 5%;
+    padding-top: 50px;
+    float: left;
+}
+
+.our-services {
+    padding-top: 0;
+    padding-bottom: 50px;
+}
+
+.our-head {
+    font-family: "Couture";
+    font-size: 50px;
+    color: #323132;
+    position: relative;
+    width: 45%;
+    top: -80px;
+    margin-left: 7%;
+}
+
+.our {
+    color: #C62314;
+}
+
+.services {
+    width: 100%;
+    display: block;
+}
+
+.service-item {
+    width: 25%;
+    float: left;
+}
+
+.service-img-div {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.service-img,
+.discribe {
+    width: 50%;
+    margin: auto;
+    text-align: center;
+    font-family: "PT Serif";
+    font-size: 20px;
+    color: #323132;
+}
+
+.discribe {
+    width: 70%;
+}
+
+.history {
+    background-color: rgb(25, 19, 51);
+    padding: 30px 5%;
+}
+
+.void {
+    width: 20%;
+    height: 1px;
+    float: left;
+}
+
+.history-text {
+    padding-top: 7px;
+    width: 50%;
+    float: left;
+    color: #dedee0;
+    font-family: "PT Serif";
+    font-size: 18px;
+    line-height: 25px;
+}
+
+.history-button {
+    width: 25%;
+    float: left;
+}
+
+.pricing {
+    background-color: #efefef;
+    text-align: center;
+}
+
+.pricing-head {
+    text-align: center;
+    font-family: "Mont Bold";
+    font-size: 30px;
+    margin-bottom: 50px;
+    color: #130E27;
+}
+
+.price-containers {
+    width: 80%;
+    margin-left: 10%;
+    float: left;
+}
+
+.price-container {
+    width: 20%;
+    padding: 30px 50px 0 50px;
+    margin-left: 3%;
+    border-radius: 5px 5px 0 0;
+    float: left;
+    background-color: #fff;
+    color: #313132;
+    font-family: "PT Serif";
+}
+
+.price-head {
+    font-size: 22px;
+}
+
+.price-price {
+    font-family: "Mont Bold";
+    margin: 20px;
+    font-size: 60px;
+    color: #C62314;
+}
+
+.price-discribe {
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.testimonial {
+    float: left;
+    color: #313132;
+    font-size: 20px;
+    font-family: "PT Serif";
+}
+
+.test-head {
+    font-family: "Mont Bold";
+    padding-top: 50px;
+    padding-bottom: 50px;
+    font-size: 50px;
+    text-align: center;
+}
+
+.comments {
+    width: 90%;
+    margin-left: 5%;
+    float: left;
+}
+
+.comments>div {
+    width: 45%;
+    margin-left: 5%;
+    float: left;
+}
+
+.coment-two {
+    background-color: #dedee0;
+    border-radius: 5px;
+    color: #C62314;
+}
+
+.comment-img {
+    width: 25%;
+    margin-right: 5%;
+    float: left;
+}
+
+.comment-text {
+    position: relative;
+    top: 15px;
+    width: 70%;
+    float: left;
+}
+
+.comment-scribe {
+    width: 75%;
+    float: left;
+    top: -15px;
+    left: 25%;
+    position: relative;
+    font-family: "Mont Reg";
+    color: #130E27;
+}
+
+footer {
+    margin-top: 100px;
+    padding: 100px 5%;
+    padding-bottom: 0;
+    width: 90%;
+    background-color: #130E27;
+    color: #dedee0;
+    font-family: "Mont Light";
+    font-size: 20px;
+    float: left;
+}
+
+footer>.logo {
+    position: relative;
+    top: -35px;
+    text-align: right;
+    margin: 0;
+    width: 50%;
+    float: left;
+    color: #C62314;
+}
+
+.copyrigth {
+    width: 50%;
+    float: left;
+}
