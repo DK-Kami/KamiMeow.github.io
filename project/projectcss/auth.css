@@ -1,0 +1,129 @@
+/*MAIN*/
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+body,
+html {
+    height: 100%;
+}
+
+input[type="text"],
+input[type="password"] {
+    margin-bottom: 15px;
+    padding-top: 15px;
+    width: 100%;
+    height: 45px;
+    border-radius: 5px;
+}
+
+
+/*ASIDE*/
+
+.left-menu {
+    width: 60px;
+    height: 100vh;
+    padding: 20px 0;
+    background-color: #161616;
+    float: left;
+    z-index: 10;
+}
+
+.left-menu>div {
+    padding: 20px 15px;
+}
+
+.ava {
+    height: 50px;
+    padding: 0 10px !important;
+}
+
+.left-menu>div>span {
+    color: #777777;
+    font-size: 30px;
+    padding-top: 50px;
+}
+
+.ava-img {
+    border-radius: 50px;
+    width: 40px;
+    height: 40px;
+    background-color: #4f5660;
+}
+
+.auto {
+    /* height: 400px; */
+    height: 60vh;
+}
+
+.exit {
+    margin-bottom: 10px;
+    margin-top: auto;
+}
+
+
+/*MAIN*/
+
+.fon {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+}
+
+.fon>img {
+    width: 100%;
+    opacity: 0.5;
+}
+
+.con {
+    width: auto;
+    height: 100vh;
+    padding-top: 10%;
+    z-index: 1;
+}
+
+.form-auth {
+    margin: auto;
+    padding: 10px;
+    width: 500px;
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+.h1 {
+    text-align: center;
+    margin-bottom: 40px;
+    margin-top: 10px;
+    font-size: 30px;
+}
+
+.input-auth {
+    text-align: left;
+    padding: 0px 50px;
+}
+
+.input-label {
+    width: auto;
+    position: relative;
+    top: -60px;
+    left: 5px;
+    font-size: 15px;
+}
+
+.login {
+    padding-left: 60px;
+}
+
+.pass {
+    padding-left: 70px;
+}
+
+.btn {
+    padding: 5px 25px;
+    margin-top: -10px;
+    margin-bottom: 20px;
+}

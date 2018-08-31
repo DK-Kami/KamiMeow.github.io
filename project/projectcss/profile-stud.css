@@ -1,0 +1,67 @@
+/*MAIN*/
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+body,
+html {
+    height: 100%;
+}
+
+hr {
+    margin-top: 0px;
+    color: #2e2e2e;
+}
+
+
+/*ASIDE*/
+
+.left-menu {
+    width: 60px;
+    height: 100vh;
+    background-color: #161616;
+    float: left;
+    z-index: 10;
+}
+
+.left-menu>div {
+    height: 50px;
+    padding: 10px 5px;
+}
+
+.left-menu>div>span {
+    color: #777777;
+    font-size: 15px;
+}
+
+.ava-img {
+    border-radius: 50px;
+    width: 50px;
+    background-color: #4f5660;
+    height: 50px;
+    overflow: hidden;
+}
+
+.ava-img>img {
+    width: 100px;
+    transform: translateX(-25px);
+}
+
+
+/*MAIN*/
+
+.con {
+    width: auto;
+    height: 100vh;
+}
+
+.header {
+    height: 50vh;
+    overflow: hidden;
+}
+
+.header>img {
+    width: 100%;
+}
