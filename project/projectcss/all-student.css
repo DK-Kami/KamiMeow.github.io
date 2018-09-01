@@ -1,0 +1,157 @@
+/*MAIN*/
+
+body,
+html,
+div {
+    padding: 0;
+    margin: 0;
+}
+
+body,
+html {
+    height: 100%;
+}
+
+hr {
+    margin-top: 0px;
+    border: 1px solid #747373;
+}
+
+body {
+    background-color: #eaeaea;
+}
+
+a,
+a:hover,
+a:visited {
+    text-decoration: none;
+    color: #b6b6b6 !important;
+}
+
+
+/*ASIDE*/
+
+.left-menu {
+    width: 60px;
+    height: 100vh;
+    position: fixed;
+    background-color: #161616;
+    border-right: 1px solid #555;
+    z-index: 10;
+}
+
+.analytic-nav {
+    width: 250px;
+    height: 100vh;
+    padding-top: 20px;
+    left: 60px;
+    position: fixed;
+    background-color: #161616;
+    z-index: 10;
+    color: #b6b6b6;
+}
+
+.h1 {
+    font-size: 25px !important;
+    padding-top: 10px !important;
+    padding-bottom: 2px !important;
+    margin-bottom: 8px !important;
+    border: none !important;
+}
+
+.analytic-nav>.h1 {
+    margin-left: 25px;
+    padding: 5px;
+    width: 80%;
+    cursor: default;
+}
+
+.analytic-nav>div>span,
+.analytic-nav>div>a {
+    margin-left: 25px;
+    border-bottom: 2px solid #555;
+    padding: 5px;
+    width: 80%;
+    cursor: pointer;
+    transition: .1s all;
+}
+
+.analytic-nav>div>span {
+    background-color: #262626;
+    font-weight: bold;
+}
+
+.analytic-nav>div>a:hover {
+    background-color: #262626;
+    transition: .1s all;
+}
+
+.analytic-nav>.h1:hover {
+    background-color: #161616;
+}
+
+#lastnav {
+    border: none;
+}
+
+#arrow {
+    font-size: 25px;
+    position: relative;
+    left: 90%;
+}
+
+.ava {
+    height: 50px;
+    margin: 10px 5px;
+    border-radius: 50px;
+    width: 50px;
+    background-color: #4f5660;
+    overflow: hidden;
+}
+
+.ava>img {
+    width: 100px;
+    transform: translateX(-25px);
+}
+
+.left-menu>div {
+    height: 50px;
+    color: #777777;
+    font-size: 30px;
+    transition: .1s all;
+}
+
+.left-menu>div>span,
+.left-menu>div>a>span {
+    cursor: pointer;
+    padding: 10px 15px;
+    transition: .1s all;
+}
+
+.left-menu>div>span:hover,
+.left-menu>div>a>span:hover {
+    background-color: #262626;
+    transition: .1s all;
+}
+
+.auto {
+    height: 50% !important;
+}
+
+
+/*CONTENT*/
+
+.con {
+    width: auto;
+    height: auto;
+    padding: 0 !important;
+    padding-top: 20px !important;
+    margin-left: 310px;
+}
+
+.con>div {
+    width: 95%;
+    padding-left: 40px;
+    margin-bottom: 10px;
+    font-size: 18px;
+}

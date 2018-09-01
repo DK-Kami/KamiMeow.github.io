@@ -1,0 +1,27 @@
+#arrow {
+    top: -90px;
+}
+
+
+/*CONTENT*/
+
+.list {
+    margin: 10px 20px;
+}
+
+.list-item>div {
+    display: inline-block;
+    font-size: 16px;
+    color: #777777;
+    margin-bottom: 10px;
+}
+
+.icon {
+    font-size: 25px !important;
+    margin-right: 10px;
+}
+
+.caption {
+    top: -3px;
+    position: relative;
+}

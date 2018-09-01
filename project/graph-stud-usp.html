@@ -10,6 +10,7 @@
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="css/themify-icons/themify-icons.css">
     <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="projectcss/all-student.css">
     <link rel="stylesheet" href="projectcss/graph-stud-usp.css">
 </head>
 
@@ -29,10 +30,10 @@
         <div class="analytic-nav">
             <div class="h1">Аналитика</div>
             <hr>
-            <div class="nav active-nav">Отчёт об успеваемости</div>
-            <div class="nav">Меры соц. поддержки</div>
-            <div class="nav">Портфолио</div>
-            <div class="nav" id="lastnav">Договор о целевом обучении</div>
+            <div class="nav"><span>Отчёт об успеваемости</span></div>
+            <div class="nav"><a href="graph-stud-support.html">Меры соц. поддержки</a></div>
+            <div class="nav"><a href="graph-stud-portfolio.html">Портфолио</a></div>
+            <div class="nav" id="lastnav"><a href="graph-stud-doc.html">Договор о целевом обучении</a></div>
             <span class="ti-angle-left" id="arrow"></span>
         </div>
 
@@ -40,13 +41,7 @@
             <div class="h1">Отчёт об успеваемости</div>
             <hr>
             <div class="year">
-                <span class="year-text">Год</span>
-                <i class="fa fa-sort-desc" aria-hidden="true"></i>
-                <select id="year-list">
-                    <option value="2016">2016</option>
-                    <option value="2017">2017</option>
-                    <option value="2018">2018</option>
-                </select>
+                Год
             </div>
             <div class="semestr">
                 <span id="caption">Семестр</span>
@@ -104,8 +99,8 @@
                 </div>
                 <div class="number-count row justify-content-center">
                     <div class="col-3 row-navs">
-                        <div class="row-nav active-row">за год</div>
-                        <div class="row-nav">за семестр</div>
+                        <div class="row-nav active-row" id="row1">за год</div>
+                        <div class="row-nav" id="row2">за семестр</div>
                     </div>
                     <div class="col-6">
                         <div class="big-number">4.8</div>
@@ -113,15 +108,124 @@
                     </div>
                 </div>
             </div>
-            <div class="table-result">
-                <div class="th"><span>Общие баллы по предметам</span></div>
-                <div class="th end"><span>экзамен</span> <span>зачёт</span></div>
+            <div class="table-res">
+                <div class="row justify-content-between">
+                    <div class="th col-4 subj">Общие баллы по предметам</div>
+                    <div class="th col-3 row justify-content-around">
+                        <div class="col-4">экзамен</div>
+                        <div class="col-4 done">зачёт</div>
+                    </div>
+                </div>
+                <div class="row justify-content-between">
+                    <div class="td col-4">Наименование предмета</div>
+                    <div class="td col-4 row justify-content-end">
+                        <div class="col-4">-</div>
+                        <div class="col-3">5</div>
+                    </div>
+                </div>
+                <div class="row justify-content-between">
+                    <div class="td col-4">Наименование предмета</div>
+                    <div class="td col-4 row justify-content-end">
+
+                        <div class="col-4">-</div>
+                        <div class="col-3">5</div>
+                    </div>
+                </div>
+                <div class="row justify-content-between">
+                    <div class="td col-4">Наименование предмета</div>
+                    <div class="td col-4 row justify-content-end">
+
+                        <div class="col-4">-</div>
+                        <div class="col-3">5</div>
+                    </div>
+                </div>
+                <div class="row justify-content-between">
+                    <div class="td col-4">Наименование предмета</div>
+                    <div class="td col-4 row justify-content-end">
+
+                        <div class="col-4">-</div>
+                        <div class="col-3">3</div>
+                    </div>
+                </div>
+                <div class="row justify-content-between">
+                    <div class="td col-4">Наименование предмета</div>
+                    <div class="td col-4 row justify-content-end">
+
+                        <div class="col-4">-</div>
+                        <div class="col-3">4</div>
+                    </div>
+                </div>
+                <div class="row justify-content-between">
+                    <div class="td col-4">Наименование предмета</div>
+                    <div class="td col-4 row justify-content-end">
+
+                        <div class="col-4">-</div>
+                        <div class="col-3">2</div>
+                    </div>
+                </div>
+                <div class="row justify-content-between">
+                    <div class="td col-4">Наименование предмета</div>
+                    <div class="td col-4 row justify-content-end">
+
+                        <div class="col-4">-</div>
+                        <div class="col-3">3</div>
+                    </div>
+                </div>
+            </div>
+            <div class="table-res">
+                <div class="row justify-content-around caption">
+                    <div class="col-3"></div>
+                    <div class="col-3">Практика</div>
+                    <div class="col-3">Курсовые</div>
+                    <div class="col-3">ВКР/дипломная работа</div>
+                </div>
+                <div class="row justify-content-around">
+                    <div class="col-3">Наименование</div>
+                    <div class="col-3">
+                        <div class="col-4 cell">-</div>
+                    </div>
+                    <div class="col-3">
+                        <div class="col-4 cell">-</div>
+                    </div>
+                    <div class="col-3 cell">5</div>
+                </div>
+                <div class="row justify-content-around">
+                    <div class="col-3">Наименование</div>
+                    <div class="col-3">
+                        <div class="col-4 cell">-</div>
+                    </div>
+                    <div class="col-3">
+                        <div class="col-4 cell">-</div>
+                    </div>
+                    <div class="col-3 cell">4</div>
+                </div>
+                <div class="row justify-content-around">
+                    <div class="col-3">Наименование</div>
+                    <div class="col-3">
+                        <div class="col-4 cell">-</div>
+                    </div>
+                    <div class="col-3">
+                        <div class="col-4 cell">-</div>
+                    </div>
+                    <div class="col-3 cell">3</div>
+                </div>
+                <div class="row justify-content-around">
+                    <div class="col-3">Наименование</div>
+                    <div class="col-3">
+                        <div class="col-4 cell">-</div>
+                    </div>
+                    <div class="col-3">
+                        <div class="col-4 cell">-</div>
+                    </div>
+                    <div class="col-3 cell">5</div>
+                </div>
             </div>
         </div>
     </div>
     <script type="text/javascript" src="js/jquery-3.3.1.slim.min.js"></script>
     <script type="text/javascript" src="js/popper.min.js"></script>
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="projectjs/graph-stud-usp.js"></script>
 </body>
 
 </html>
