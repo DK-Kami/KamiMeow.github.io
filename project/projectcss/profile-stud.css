@@ -23,7 +23,7 @@ hr {
 .left-menu {
     width: 60px;
     height: 100vh;
-    float: left;
+    position: fixed;
     background-color: #161616;
     z-index: 10;
 }
@@ -72,17 +72,12 @@ hr {
 
 .con {
     width: auto;
-    height: 100vh;
+    height: auto;
     padding: 0 !important;
 }
 
 .head {
-    position: relative;
     height: 50%;
-}
-
-.header {
-    height: 100%;
     overflow: hidden;
 }
 
@@ -102,8 +97,16 @@ hr {
     left: 200px;
 }
 
-.h1 {
-    font-size: 20px;
+.contacts>hr {
+    margin-top: 5px;
+    clear: left;
+}
+
+.contacts>.h1 {
+    font-size: 25px;
+    margin-top: 5px;
+    float: left;
+    display: block;
 }
 
 .void {
@@ -113,7 +116,25 @@ hr {
 #doc {
     width: 40%;
     white-space: normal;
+    display: block;
+    margin-top: -5px;
+    margin-left: auto;
+    margin-bottom: 5px;
     padding: 0;
+    font-size: 15px;
+}
+
+#dataend {
+    margin-bottom: 50px;
+}
+
+span[class="data"] {
+    float: right;
+    clear: left;
+}
+
+.ico {
+    font-size: 20px;
 }
 
 .photo {
