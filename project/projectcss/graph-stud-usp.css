@@ -46,6 +46,12 @@
     font-size: 18px !important;
 }
 
+.gistogram {
+    width: 95%;
+    position: absolute;
+    bottom: 0;
+}
+
 .line {
     font-size: 10px;
     border-bottom: 2px solid #dd5858;
