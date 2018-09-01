@@ -1,0 +1,339 @@
+/*MAIN*/
+
+body,
+html,
+div {
+    padding: 0;
+    margin: 0;
+}
+
+body,
+html {
+    height: 100%;
+}
+
+hr {
+    margin-top: 0px;
+    border: 1px solid #747373;
+}
+
+body {
+    background-color: #eaeaea;
+}
+
+a,
+a:hover,
+a:visited {
+    text-decoration: none;
+    color: #777777 !important;
+}
+
+
+/*TABLE*/
+
+th {
+    font-weight: normal;
+    color: #878787;
+    padding-right: 20px;
+    padding-bottom: 15px;
+}
+
+td {
+    color: #555;
+    padding-bottom: 15px;
+}
+
+
+/*ASIDE*/
+
+.left-menu {
+    width: 60px;
+    height: 100vh;
+    position: fixed;
+    background-color: #161616;
+    border-right: 1px solid #555;
+    z-index: 10;
+}
+
+.analytic-nav {
+    width: 250px;
+    height: 100vh;
+    padding-top: 20px;
+    left: 60px;
+    position: fixed;
+    background-color: #161616;
+    z-index: 10;
+    color: #b6b6b6;
+}
+
+.h1 {
+    font-size: 25px !important;
+    padding-top: 10px !important;
+    padding-bottom: 2px !important;
+    margin-bottom: 8px !important;
+    border: none !important;
+}
+
+.analytic-nav>div {
+    margin-left: 25px;
+    border-bottom: 2px solid #555;
+    padding: 5px;
+    width: 80%;
+    cursor: pointer;
+    transition: .1s all;
+}
+
+.analytic-nav>div:hover {
+    background-color: #262626;
+    transition: .1s all;
+}
+
+#lastnav {
+    border: none;
+}
+
+#arrow {
+    font-size: 25px;
+    position: relative;
+    left: 90%;
+    top: -123px;
+}
+
+.analytic-nav>.active-nav {
+    font-weight: bold;
+}
+
+.active {
+    background-color: #262626;
+}
+
+.ava {
+    height: 50px;
+    margin: 10px 5px;
+    border-radius: 50px;
+    width: 50px;
+    background-color: #4f5660;
+    overflow: hidden;
+}
+
+.ava>img {
+    width: 100px;
+    transform: translateX(-25px);
+}
+
+.left-menu>div {
+    height: 50px;
+    color: #777777;
+    font-size: 30px;
+    transition: .1s all;
+}
+
+.left-menu>div>span,
+.left-menu>div>a>span {
+    cursor: pointer;
+    padding: 10px 15px;
+    transition: .1s all;
+}
+
+.left-menu>div>span:hover,
+.left-menu>div>a>span:hover {
+    background-color: #262626;
+    transition: .1s all;
+}
+
+.auto {
+    height: 50% !important;
+}
+
+
+/*CONTENT*/
+
+.con {
+    width: auto;
+    height: auto;
+    padding: 0 !important;
+    padding-top: 20px !important;
+    margin-left: 310px;
+}
+
+.con>div {
+    width: 95%;
+    padding-left: 40px;
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.semestr>span {
+    padding: 5px 25px;
+    z-index: 10;
+    cursor: pointer;
+    transition: .1s all;
+}
+
+#active-semester,
+.semestr>span:hover {
+    border-bottom: 4px solid #2d2d2d;
+    transition: .1s all;
+}
+
+.semestr>hr {
+    margin-left: -5px;
+    margin-top: 6px;
+    z-index: 1;
+}
+
+#caption {
+    margin-right: 50px;
+    padding-left: 0;
+    border: none;
+}
+
+.stat {
+    margin-left: 10px;
+}
+
+.graphic {
+    border: 1px solid #2d2d2d;
+    padding: 0 20px;
+    text-align: center
+}
+
+.graphic>.h1 {
+    padding-top: 0px !important;
+    font-size: 18px !important;
+}
+
+.line {
+    font-size: 10px;
+    border-bottom: 2px solid #dd5858;
+    margin-top: 50px;
+}
+
+.bloc {
+    font-size: 10px;
+}
+
+.color {
+    height: 75px;
+}
+
+.color>div {
+    width: 100%;
+    background-color: #eaeaea;
+}
+
+#propcol {
+    background-color: #6fb15a;
+}
+
+#bolcol {
+    background-color: #ddcb4d;
+}
+
+#dolgcol {
+    background-color: #6dae5f;
+}
+
+#opzcol {
+    background-color: #db7544;
+}
+
+#prop {
+    height: 65px;
+}
+
+#bol {
+    height: 50px;
+}
+
+#dolg {
+    height: 60px;
+}
+
+#opz {
+    height: 30px;
+}
+
+.count {
+    margin-top: 25px;
+}
+
+.count>img {
+    width: 100%;
+}
+
+
+/* .count {
+    padding-top: 0px;
+}
+
+.count>div {
+    display: inline-block;
+}
+
+.text {
+    margin-right: 50px;
+}
+
+.number {
+    color: #4f935c;
+    font-size: 70px;
+    text-align: center;
+}
+
+.proc {
+    color: #4f935c;
+    font-size: 150px;
+    float: right;
+    margin-top: 0px;
+    margin-right: 10px;
+} */
+
+.number-count {
+    margin-top: -50px;
+}
+
+.row-navs {
+    margin-top: 200px;
+    cursor: pointer;
+    color: #8a8a8a;
+}
+
+.row-nav {
+    font-size: 15px;
+    padding-left: 10px;
+    border-left: 2px solid #8a8a8a;
+    transition: .1s all;
+}
+
+.active-row,
+.row-nav:hover {
+    border-left: 2px solid #414141;
+    color: #414141;
+    transition: .1s all;
+}
+
+.big-number {
+    font-size: 250px;
+    color: #6eae60;
+}
+
+.scribe-number {
+    font-size: 70px;
+    position: relative;
+    top: -160px;
+    left: 280px;
+    color: #383838;
+}
+
+.table-result {
+    margin-top: -75px;
+    border: 1px solid #161616;
+    margin-left: 35px;
+    border-radius: 5px;
+    padding: 10px 20px !important;
+}
+
+.th {
+    border-bottom: 1px solid #747373;
+}

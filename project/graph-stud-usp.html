@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="icon" href="img/favicon.png">
+    <title>Аналитика</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/themify-icons/themify-icons.css">
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="projectcss/graph-stud-usp.css">
+</head>
+
+<body>
+    <div id="app">
+        <aside class="left-menu">
+            <div class="ava">
+                <img src="img/ava-stud.jpg" alt="">
+            </div>
+            <hr>
+            <div class="home"><a href="profile-stud.html"><span class="ti-home"></span></a></div>
+            <div class="graph"><span class="ti-bar-chart-alt active"></span></div>
+            <div class="calendar"><span class="ti-calendar"></span></div>
+            <div class="auto"></div>
+            <div class="off"><a href="auth.html"><span class="ti-power-off"></span></a></div>
+        </aside>
+        <div class="analytic-nav">
+            <div class="h1">Аналитика</div>
+            <hr>
+            <div class="nav active-nav">Отчёт об успеваемости</div>
+            <div class="nav">Меры соц. поддержки</div>
+            <div class="nav">Портфолио</div>
+            <div class="nav" id="lastnav">Договор о целевом обучении</div>
+            <span class="ti-angle-left" id="arrow"></span>
+        </div>
+
+        <div class="container-fluid con">
+            <div class="h1">Отчёт об успеваемости</div>
+            <hr>
+            <div class="year">
+                <span class="year-text">Год</span>
+                <i class="fa fa-sort-desc" aria-hidden="true"></i>
+                <select id="year-list">
+                    <option value="2016">2016</option>
+                    <option value="2017">2017</option>
+                    <option value="2018">2018</option>
+                </select>
+            </div>
+            <div class="semestr">
+                <span id="caption">Семестр</span>
+                <span id="active-semester">1</span>
+                <span>2</span>
+                <span>3</span>
+                <span>4</span>
+                <span>5</span>
+                <span>7</span>
+                <span>8</span>
+                <span>9</span>
+                <span>10</span>
+                <hr>
+            </div>
+            <div class="stat">
+                <div class="row justify-content-between">
+                    <div class="graphic col-5">
+                        <div class="h1">Общий рейтинг</div>
+                        <div class="line">допустимое кол-во</div>
+                        <div class="gistogram row justify-content-around">
+                            <div class="bloc col-3">
+                                <div class="color" id="propcol">
+                                    <div id="prop"></div>
+                                </div>
+                                <div class="discribe">пропуски</div>
+                            </div>
+                            <div class="bloc col-3">
+                                <div class="color" id="bolcol">
+                                    <div id="bol"></div>
+                                </div>
+                                <div class="discribe">по болезни</div>
+                            </div>
+                            <div class="bloc col-3">
+                                <div class="color" id="dolgcol">
+                                    <div id="dolg"></div>
+                                </div>
+                                <div class="discribe">долги</div>
+                            </div>
+                            <div class="bloc col-3">
+                                <div class="color" id=opzcol>
+                                    <div id="opz"></div>
+                                </div>
+                                <div class="discribe">опоздание</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="count col-6">
+                        <!-- <div class="text">Посещаемость</div>
+                        <div class="number">92</div>
+                        <div class="proc">%</div>
+                        <div class="text">Успеваемость</div>
+                        <div class="number">95</div> -->
+                        <img src="img/Pro.png" alt="">
+                    </div>
+                </div>
+                <div class="number-count row justify-content-center">
+                    <div class="col-3 row-navs">
+                        <div class="row-nav active-row">за год</div>
+                        <div class="row-nav">за семестр</div>
+                    </div>
+                    <div class="col-6">
+                        <div class="big-number">4.8</div>
+                        <span class="scribe-number">ср. балл</span>
+                    </div>
+                </div>
+            </div>
+            <div class="table-result">
+                <div class="th"><span>Общие баллы по предметам</span></div>
+                <div class="th end"><span>экзамен</span> <span>зачёт</span></div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="js/jquery-3.3.1.slim.min.js"></script>
+    <script type="text/javascript" src="js/popper.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+</body>
+
+</html>

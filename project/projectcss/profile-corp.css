@@ -68,8 +68,7 @@ td {
 }
 
 .ava>img {
-    width: 100px;
-    transform: translateX(-25px);
+    width: 180%;
 }
 
 .left-menu>div {
@@ -233,71 +232,4 @@ span[class="data"] {
 .name {
     font-size: 30px;
     margin-bottom: -10px;
-}
-
-
-/*INFO*/
-
-.info {
-    padding: 50px 150px 0 200px;
-}
-
-.info>div>.ico {
-    /* padding: 7px; */
-    width: auto;
-    float: left;
-    color: #5d5d5d;
-    transition: .2s all;
-}
-
-.info>div>.ico:hover {
-    color: #878787;
-    transition: .2s all;
-}
-
-.info>div>.h1 {
-    text-align: center;
-    font-size: 30px;
-    width: 90%;
-}
-
-.about {
-    padding: 60px 40px;
-    padding-bottom: 20px;
-}
-
-.about>hr {
-    margin-top: 4px;
-    border: 1px solid #bebebe;
-}
-
-.navig {
-    font-size: 18px;
-    padding: 5px 10px;
-    text-align: center;
-    margin-right: 20px;
-    color: #555;
-    border-bottom: 2px solid #bebebe;
-    cursor: pointer;
-}
-
-.active-nav,
-.navig:hover {
-    color: #878787;
-    border-bottom: 2px solid #454545;
-}
-
-.text {
-    padding: 20px 15px;
-    font-size: 16px;
-}
-
-#student,
-#univer,
-#corp {
-    display: none;
-}
-
-.active-table {
-    display: block !important;
 }

@@ -65,7 +65,7 @@ input[type="password"] {
 }
 
 
-/*MAIN*/
+/*CONTENT*/
 
 .fon {
     width: 100vw;
@@ -150,6 +150,5 @@ input[type="password"] {
 }
 
 .links>.ava-img>a>img {
-    width: 100px;
-    transform: translateX(-25px);
+    width: 180%;
 }
