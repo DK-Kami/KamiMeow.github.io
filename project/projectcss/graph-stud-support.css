@@ -5,7 +5,105 @@
 
 /*CONTENT*/
 
+.con>div {
+    margin-left: 20px;
+}
+
 .mers {
+    width: 90% !important;
     border: 1px solid #161616;
-    margin-left: 40px;
+    margin-top: 25px;
+    margin-bottom: 50px !important;
+    margin-left: 60px !important;
+    padding: 25px 10px;
+}
+
+.my-card>div {
+    width: 100%;
+}
+
+.my-card>div>img {
+    width: 100%;
+}
+
+#arrow-card {
+    position: relative;
+    top: 75px;
+    left: -30px;
+    font-size: 80px;
+    font-weight: bold;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: #777;
+    transition: .1s all;
+}
+
+#arrow-card:hover {
+    color: rgb(77, 77, 77);
+    background-color: #bebebe41;
+    transition: .1s all;
+}
+
+.discribe {
+    color: #686868;
+    font-size: 20px;
+    cursor: default;
+}
+
+.circle {
+    text-align: center;
+}
+
+#year {
+    float: right;
+    padding-right: 0 !important;
+}
+
+.big-number {
+    top: -25px !important;
+    left: -20px;
+    margin-bottom: -35px;
+    font-size: 100px;
+    margin-left: 10px;
+    position: relative;
+    letter-spacing: 8px;
+}
+
+.legend-item>div {
+    display: inline-block;
+}
+
+.color {
+    width: 20px;
+    height: 20px;
+}
+
+.scribe {
+    position: relative;
+    top: -5px;
+}
+
+.ul {
+    margin-top: -5px;
+    padding-left: 35px;
+}
+
+.ul>div {
+    font-size: 16px;
+}
+
+#clGreen {
+    background-color: #68c262;
+}
+
+#clRed {
+    background-color: #ab0e19;
+}
+
+#clPink {
+    background-color: #d28557;
+}
+
+#clYellow {
+    background-color: #d2bc56;
 }
