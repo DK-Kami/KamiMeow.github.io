@@ -1,6 +1,8 @@
 /*MAIN*/
 
-body {
+body,
+html,
+div {
     padding: 0;
     margin: 0;
 }
@@ -12,7 +14,7 @@ html {
 
 hr {
     margin-top: 0px;
-    color: #2e2e2e;
+    border: 1px solid #363636;
 }
 
 
@@ -21,32 +23,48 @@ hr {
 .left-menu {
     width: 60px;
     height: 100vh;
-    background-color: #161616;
     float: left;
+    background-color: #161616;
     z-index: 10;
+}
+
+.active {
+    background-color: #262626;
+}
+
+.ava {
+    height: 50px;
+    margin: 10px 5px;
+    border-radius: 50px;
+    width: 50px;
+    background-color: #4f5660;
+    overflow: hidden;
+}
+
+.ava>img {
+    width: 100px;
+    transform: translateX(-25px);
 }
 
 .left-menu>div {
     height: 50px;
-    padding: 10px 5px;
+    /* padding: 100px 15px; */
+    color: #777777;
+    font-size: 30px;
+    transition: .1s all;
 }
 
 .left-menu>div>span {
-    color: #777777;
-    font-size: 15px;
+    padding: 10px 15px;
 }
 
-.ava-img {
-    border-radius: 50px;
-    width: 50px;
-    background-color: #4f5660;
-    height: 50px;
-    overflow: hidden;
+.left-menu>div>span:hover {
+    background-color: #262626;
+    transition: .1s all;
 }
 
-.ava-img>img {
-    width: 100px;
-    transform: translateX(-25px);
+.auto {
+    height: 50% !important;
 }
 
 
@@ -55,13 +73,58 @@ hr {
 .con {
     width: auto;
     height: 100vh;
+    padding: 0 !important;
+}
+
+.head {
+    position: relative;
+    height: 50%;
 }
 
 .header {
-    height: 50vh;
+    height: 100%;
     overflow: hidden;
 }
 
 .header>img {
     width: 100%;
+}
+
+.contacts {
+    width: 40%;
+    background-color: #000;
+    color: #e2dedb;
+    opacity: .5;
+    border-radius: 5px;
+    position: absolute;
+    padding: 10px 40px;
+    top: 50px;
+    left: 200px;
+}
+
+.h1 {
+    font-size: 20px;
+}
+
+.void {
+    width: 10%;
+}
+
+#doc {
+    width: 40%;
+    white-space: normal;
+    padding: 0;
+}
+
+.photo {
+    width: 40%;
+    height: auto;
+    background-color: #000;
+    color: #e2dedb;
+    opacity: .5;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: 0;
 }

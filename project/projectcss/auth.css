@@ -31,19 +31,14 @@ input[type="password"] {
     z-index: 10;
 }
 
-.left-menu>div {
-    padding: 20px 15px;
+.active {
+    background-color: #262626;
 }
 
 .ava {
     height: 50px;
     padding: 0 10px !important;
-}
-
-.left-menu>div>span {
-    color: #777777;
-    font-size: 30px;
-    padding-top: 50px;
+    margin-bottom: 10px;
 }
 
 .ava-img {
@@ -53,14 +48,20 @@ input[type="password"] {
     background-color: #4f5660;
 }
 
-.auto {
-    /* height: 400px; */
-    height: 60vh;
+.left-menu>span {
+    padding: 10px 15px;
+    color: #777777;
+    font-size: 30px;
+    transition: .1s all;
 }
 
-.exit {
-    margin-bottom: 10px;
-    margin-top: auto;
+.left-menu>span:hover {
+    background-color: #262626;
+    transition: .1s all;
+}
+
+.auto {
+    height: 75%;
 }
 
 

@@ -5,10 +5,10 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <link rel="icon" href="/img/favicon.png">
+    <link rel="icon" href="img/favicon.png">
     <title>Личный кабинет</title>
-    <link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="/css/themify-icons.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/themify-icons/themify-icons.css">
     <link rel="stylesheet" href="projectcss/profile-stud.css">
 </head>
 
@@ -16,45 +16,43 @@
     <div id="app">
         <aside class="left-menu">
             <div class="ava">
-                <div class="ava-img">
-                    <img src="img/ava-stud.jpg" alt="">
-                </div>
+                <img src="img/ava-stud.jpg" alt="">
             </div>
             <hr>
-            <div class="home">
-                <span class="ti-home">home</span>
-            </div>
-            <div class="analytic">
-                <span class="ti-home">analytic</span>
-            </div>
-            <div class="calendar">
-                <span class="ti-home">calendar</span>
-            </div>
+            <div class="home"><span class="ti-home active"></span></div>
+            <div class="graph"><span class="ti-home"></span></div>
+            <div class="calendar"><span class="ti-home"></span></div>
             <div class="auto"></div>
-            <div class="exit">
-                <span class="ti-power-off">exit</span>
-            </div>
+            <div class="off"><span class="ti-power-off"></span></div>
         </aside>
+
         <div class="container-fluid con">
             <div class="head">
                 <div class="header">
                     <img src="img/header-stud.jpg" alt="">
                 </div>
                 <div class="contacts">
-                    <div class="h1">Личные данные</div>
-                    <div class="btn btn-outline-light">Договор о целевом обучении</div>
+                    <span class="h1">Личные данные</span>
+                    <div class="void"></div>
+                    <button class="btn btn-outline-light" id="doc" type="button">Договор о целевом обучении</button>
                     <hr>
-
+                    <div class="data">Дата рождения</div>
+                    <span class="data"></span>
+                    <div class="data">Пол</div>
+                    <span class="data"></span>
+                    <div class="data">Место рождения</div>
+                    <span class="data"></span>
                 </div>
-                <div class="photo">
-
-                </div>
+            </div>
+            <div class="photo">
+                asas
             </div>
         </div>
     </div>
-    <script type="text/javascript" src="/js/jquery-3.3.1.slim.min.js"></script>
-    <script type="text/javascript" src="/js/popper.min.js"></script>
-    <script type="text/javascript" src="/js/bootstrap.min.js"></script>
+
+    <script type="text/javascript" src="js/jquery-3.3.1.slim.min.js"></script>
+    <script type="text/javascript" src="js/popper.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
 </body>
 
 </html>
