@@ -28,6 +28,25 @@ a:visited {
     color: #777777 !important;
 }
 
+input[type="search"] {
+    width: 100%;
+    background-color: #eaeaea;
+    outline-offset: 0;
+    border: 1px solid #777777;
+    border-radius: 5px;
+    font-size: 20px;
+    padding: 5px 10px;
+    color: #777;
+    padding-right: 5%;
+}
+
+.search>span {
+    font-size: 20px;
+    position: relative;
+    top: -30px;
+    right: -96%;
+}
+
 
 /*TABLE*/
 
@@ -68,7 +87,8 @@ td {
 }
 
 .ava>img {
-    width: 180%;
+    width: 100px;
+    transform: translateX(-25px);
 }
 
 .left-menu>div {
@@ -137,17 +157,6 @@ td {
 
 .void {
     width: 10%;
-}
-
-#doc {
-    width: 40%;
-    white-space: normal;
-    display: block;
-    margin-top: -5px;
-    margin-left: auto;
-    margin-bottom: 5px;
-    padding: 0;
-    font-size: 15px;
 }
 
 #dataend {
@@ -219,18 +228,90 @@ span[class="data"] {
     transition: .2s all;
 }
 
+#sub {
+    margin-top: -25px;
+}
+
 .ava-img {
-    margin-top: 50px;
+    margin-top: 10px;
     margin-bottom: 40px;
     width: 75%;
 }
 
 .ava-img>img {
-    width: 100%;
+    width: 75%;
 }
 
 .name {
     font-size: 30px;
-    margin-bottom: -10px;
+    line-height: 30px;
     font-weight: bold;
+}
+
+
+/*INFO*/
+
+.info {
+    padding: 50px 150px 0 200px;
+}
+
+.info>div>.ico {
+    /* padding: 7px; */
+    width: auto;
+    float: left;
+    color: #5d5d5d;
+    transition: .2s all;
+}
+
+.info>div>.ico:hover {
+    color: #878787;
+    transition: .2s all;
+}
+
+.info>div>.h1 {
+    text-align: center;
+    font-size: 30px;
+    width: 90%;
+}
+
+.about {
+    padding: 20px 40px;
+    padding-bottom: 20px;
+}
+
+.about>hr {
+    margin-top: 4px;
+    border: 1px solid #bebebe;
+}
+
+.navig {
+    font-size: 18px;
+    padding: 5px 10px;
+    text-align: center;
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-bottom: -5px;
+    color: #555;
+    cursor: pointer;
+}
+
+.text {
+    padding: 20px 15px;
+    font-size: 16px;
+}
+
+.map {
+    text-align: center;
+}
+
+.active-table {
+    display: block !important;
+}
+
+.corps {
+    font-size: 16px;
+    color: #555;
+    cursor: pointer;
+    padding: 0 20px;
+    padding-right: 50px;
 }
