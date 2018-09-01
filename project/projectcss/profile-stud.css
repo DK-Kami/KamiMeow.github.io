@@ -17,6 +17,10 @@ hr {
     border: 1px solid #747373;
 }
 
+body {
+    background-color: #eaeaea;
+}
+
 
 /*TABLE*/
 
@@ -92,7 +96,7 @@ td {
 }
 
 .head {
-    height: 500px;
+    height: 600px;
     overflow: hidden;
 }
 
@@ -107,7 +111,7 @@ td {
     border-radius: 5px;
     position: absolute;
     padding: 10px 40px;
-    top: 30px;
+    top: 5%;
     left: 200px;
 }
 
@@ -147,11 +151,9 @@ span[class="data"] {
     clear: left;
 }
 
-div[class="data"] {}
-
 .ico {
     display: inline-block;
-    font-size: 30px;
+    font-size: 40px;
     width: 10%;
     margin-right: 5%;
     text-align: center;
@@ -164,7 +166,7 @@ div[class="data"] {}
 }
 
 .ico-data>div {
-    margin-bottom: 18px;
+    margin-bottom: 35px;
 }
 
 .ico-data>#dataend {
@@ -173,7 +175,7 @@ div[class="data"] {}
 
 .photo {
     width: 35%;
-    height: 500px;
+    height: 600px;
     background-color: rgba(0, 0, 0, 0.5);
     color: #e2dedb;
     position: absolute;
@@ -229,11 +231,10 @@ div[class="data"] {}
 
 .info {
     padding: 50px 150px 0 200px;
-    background-color: #eaeaea;
 }
 
 .info>div>.ico {
-    padding: 7px;
+    /* padding: 7px; */
     width: auto;
     float: left;
     color: #5d5d5d;
