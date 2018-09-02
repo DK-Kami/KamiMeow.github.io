@@ -40,22 +40,43 @@
         <div class="container-fluid con">
             <div class="h1">Отчёт об успеваемости</div>
             <hr>
-            <div class="year">
-                Год
+            <div class="year row" id="year">
+                <div class="col-2" id="nav-caption">Год</div>
+                <div class="col-2" id="active-year">
+                    <div class="col-12">2015-2016</div>
+                    <div class="col-12 sub"></div>
+                </div>
+                <div class="col-2">
+                    <div class="col-12">2016-2017</div>
+                    <div class="col-12 sub"></div>
+                </div>
+                <div class="col-2">
+                    <div class="col-12">2017-2018</div>
+                    <div class="col-12 sub"></div>
+                </div>
+                <div class="col-2">
+                    <div class="col-12">2018-2019</div>
+                    <div class="col-12 sub"></div>
+                </div>
+                <div class="col-2">
+                    <div class="col-12">2019-2020</div>
+                    <div class="col-12 sub"></div>
+                </div>
             </div>
-            <div class="semestr">
-                <span id="caption">Семестр</span>
-                <span id="active-semester">1</span>
-                <span>2</span>
-                <span>3</span>
-                <span>4</span>
-                <span>5</span>
-                <span>7</span>
-                <span>8</span>
-                <span>9</span>
-                <span>10</span>
-                <hr>
+            <div class="semestr row" id="semestr">
+                <div class="col-2" id="nav-caption">Семестр</div>
+                <div class="col-1" id="active-semester">1</div>
+                <div class="col-1" id="active-semester">2</div>
+                <div class="col-1">3</div>
+                <div class="col-1">4</div>
+                <div class="col-1">5</div>
+                <div class="col-1">6</div>
+                <div class="col-1">7</div>
+                <div class="col-1">8</div>
+                <div class="col-1">9</div>
+                <div class="col-1">10</div>
             </div>
+            <hr id="semestr-hr">
             <div class="stat">
                 <div class="row justify-content-between">
                     <div class="graphic col-5">
@@ -90,20 +111,19 @@
                             </div>
                         </div>
                     </div>
-                    <div class="count col-6">
-                        <!-- <div class="text">Посещаемость</div>
-                        <div class="number">92</div>
-                        <div class="proc">%</div>
-                        <div class="text">Успеваемость</div>
-                        <div class="number">95</div> -->
-                        <img src="img/Pro.png" alt="">
+                    <div class="count col-6 row">
+                        <div class="col-4" class="text">
+                            <div class="col-12">Посещаемость</div>
+                            <div class="col-12">Успеваемость</div>
+                        </div>
+                        <div class="col-2" class="number">
+                            <div class="col-12">92</div>
+                            <div class="col-12">95</div>
+                        </div>
+                        <div class="col-4" class="proc">%</div>
                     </div>
                 </div>
                 <div class="number-count row justify-content-center">
-                    <div class="col-3 row-navs">
-                        <div class="row-nav active-row" id="row1">за год</div>
-                        <div class="row-nav" id="row2">за семестр</div>
-                    </div>
                     <div class="col-6">
                         <div class="big-number">4.8</div>
                         <span class="scribe-number">ср. балл</span>
@@ -224,7 +244,7 @@
             </div>
         </div>
     </div>
-    <script type="text/javascript" src="js/jquery-3.3.1.slim.min.js"></script>
+    <script type="text/javascript" src="js/jq.js"></script>
     <script type="text/javascript" src="js/popper.min.js"></script>
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
     <script type="text/javascript" src="projectjs/graph-stud-usp.js"></script>

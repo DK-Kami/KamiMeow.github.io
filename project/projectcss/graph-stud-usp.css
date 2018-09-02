@@ -5,23 +5,55 @@
 
 /*CONTENT*/
 
-.semestr>span {
-    padding: 5px 25px;
+.year>div {
+    text-align: center;
+    cursor: pointer;
+    transition: .1s all;
+}
+
+.sub {
+    border: 2px solid #4d4d4d;
+    padding-top: 5px;
+    padding-left: -10px !important;
+    padding-right: -10px !important;
+    margin-bottom: -10px;
+    border-bottom: none;
+}
+
+.semestr>div {
+    text-align: center;
+    padding-bottom: 5px;
+    margin-bottom: -10px;
     z-index: 10;
     cursor: pointer;
     transition: .1s all;
 }
 
-#active-semester,
-.semestr>span:hover {
-    border-bottom: 4px solid #2d2d2d;
+#active-year,
+.year>div:hover {
+    color: #777;
     transition: .1s all;
 }
 
-.semestr>hr {
-    margin-left: -5px;
-    margin-top: 6px;
-    z-index: 1;
+#active-semester,
+.semestr>div:hover {
+    color: #777;
+    border-bottom: 4px solid #4d4d4d;
+    transition: .1s all;
+}
+
+#nav-caption {
+    text-align: left;
+}
+
+#nav-caption:hover {
+    color: #000;
+    border: 0;
+}
+
+#semestr-hr {
+    margin-left: 35px;
+    margin-right: 55px;
 }
 
 #caption {
@@ -111,8 +143,7 @@
     width: 100%;
 }
 
-
-/* .count {
+.count {
     padding-top: 0px;
 }
 
@@ -120,8 +151,8 @@
     display: inline-block;
 }
 
-.text {
-    margin-right: 50px;
+.text>div {
+    font-size: 25px;
 }
 
 .number {
@@ -133,10 +164,9 @@
 .proc {
     color: #4f935c;
     font-size: 150px;
-    float: right;
     margin-top: 0px;
     margin-right: 10px;
-} */
+}
 
 .number-count {
     margin-top: -50px;
@@ -209,4 +239,29 @@
 
 .cell {
     text-align: center;
+}
+
+.btn-secondary {
+    color: #212529;
+    background-color: #eaeaea;
+    border: none;
+    font-size: 18px;
+    margin-left: -10px !important;
+}
+
+.btn-secondary:hover {
+    color: #212529;
+    background-color: #eaeaea;
+}
+
+.btn-secondary:active,
+.btn-secondary:focus {
+    color: #212529 !important;
+    background-color: #eaeaea !important;
+    border: 0 !important;
+    box-shadow: 0 !important;
+}
+
+.btn:focus {
+    box-shadow: 0 !important;
 }
