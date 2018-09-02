@@ -6,20 +6,87 @@
 /*CONTENT*/
 
 .con>div {
-    margin-left: 20px;
+    margin-left: 5px;
+}
+
+#year {
+    float: none !important;
+}
+
+.year>div {
+    text-align: center;
+    cursor: pointer;
+    transition: .1s all;
+}
+
+.sub {
+    border: 2px solid #4d4d4d;
+    padding-top: 5px;
+    padding-left: -10px !important;
+    padding-right: -10px !important;
+    margin-bottom: -10px;
+    border-bottom: none;
+}
+
+.semestr>div {
+    text-align: center;
+    padding-bottom: 5px;
+    margin-bottom: -10px;
+    z-index: 10;
+    cursor: pointer;
+    transition: .1s all;
+}
+
+#active-year,
+.year>div:hover {
+    color: #777;
+    transition: .1s all;
+}
+
+#active-semester,
+.semestr>div:hover {
+    color: #777;
+    border-bottom: 4px solid #4d4d4d;
+    transition: .1s all;
+}
+
+#nav-caption {
+    text-align: left;
+}
+
+#nav-caption:hover {
+    color: #000;
+    border: 0;
+}
+
+#semestr-hr {
+    margin-left: 60px;
+    margin-right: 55px;
+}
+
+#caption {
+    margin-right: 50px;
+    padding-left: 0;
+    border: none;
 }
 
 .mers {
-    width: 90% !important;
+    width: 95%;
     border: 1px solid #161616;
     margin-top: 25px;
     margin-bottom: 50px !important;
-    margin-left: 60px !important;
-    padding: 25px 10px;
+    margin-left: 50px !important;
+    margin-right: 0 !important;
+    padding: 10px 5px;
+    padding-left: 10px !important;
+}
+
+.mers>.row {
+    margin-right: 0 !important;
 }
 
 .my-card>div {
-    width: 100%;
+    width: 80% !important;
 }
 
 .my-card>div>img {
