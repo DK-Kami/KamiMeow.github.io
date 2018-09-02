@@ -228,10 +228,9 @@
     margin-bottom: 20px;
 }
 
-
-/* .cell {
-    text-align: center;
-} */
+.cell>div {
+    text-align: center !important;
+}
 
 .btn-secondary {
     color: #212529;
