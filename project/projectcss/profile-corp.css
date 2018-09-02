@@ -307,13 +307,13 @@ span[class="data"] {
     padding: 5px 10px;
 }
 
-.serch-dop {
+.search-dop {
     font-size: 18px;
     color: #777;
+    cursor: pointer;
 }
 
 #open-dop {
-    cursor: pointer;
     margin-left: -10px;
     margin-bottom: 5px;
 }

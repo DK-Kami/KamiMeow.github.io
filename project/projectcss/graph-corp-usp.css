@@ -1,0 +1,13 @@
+.ava-img {
+    margin-top: 50px;
+    margin-bottom: 40px;
+    width: 75%;
+}
+
+.ava-img>img {
+    width: 150%;
+}
+
+.graphic>img {
+    width: 100%;
+}

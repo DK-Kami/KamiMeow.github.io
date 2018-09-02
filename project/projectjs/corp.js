@@ -17,15 +17,15 @@ function toogle() {
     var hide = document.getElementById("hide");
     var arrow = document.getElementById("arrow");
 
+    console.log(hide);
+
     console.log(hide.style.display);
-    if (hide.style.display == "none") {
-        hide.style.cssText = "display: flex"
-        arrow.style.cssText = "transform: rotate(0deg)"
-        console.log("baka");
-    } else {
+    if (hide.style.display == "flex") {
         hide.style.cssText = "display: none"
         arrow.style.cssText = "transform: rotate(-90deg)"
-        console.log("baka baka");
+    } else {
+        hide.style.cssText = "display: flex"
+        arrow.style.cssText = "transform: rotate(0deg)"
     }
 }
 
