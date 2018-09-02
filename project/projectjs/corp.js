@@ -8,9 +8,9 @@ function sent(id, value) {
 }
 
 function openDown(id) {
-    corp.style.display = "none";
-    corpSearch.style.display = "none";
-    corpData.childNodes[id].style.display = "block";
+    corp.style.cssText = "display: none";
+    corpSearch.style.cssText = "display: block !important";
+    corpData.style.cssText = "display: flex !important";
 }
 
 function toogle() {
