@@ -49,6 +49,8 @@
                     <input type="search" value="" placeholder="Поиск">
                     <span class="ti-search"></span>
                 </div>
+
+
             </div>
 
             <div class="stat">
@@ -74,6 +76,34 @@
                         <span class="scribe-number">ср. балл</span>
                     </div>
                 </div>
+            </div>
+            <div class="table-stud">
+                <div class="row justify-content-between">
+                    <div class="col-4 th caption">Список студентов</div>
+                    <div class="col-2 th center">сортировать</div>
+                </div>
+                <hr>
+                <div class="row justify-content-between">
+                    <div class="col-7">Иванова Мария Сергеевна</div>
+                    <div class="col-2 center">8</div>
+                </div>
+                <div class="row justify-content-between">
+                    <div class="col-7">Михайленко Игорь Викторович</div>
+                    <div class="col-2 center">4</div>
+                </div>
+                <div class="row justify-content-between">
+                    <div class="col-7">Ильин Дмитрий Андреевич</div>
+                    <div class="col-2 center">10</div>
+                </div>
+                <div class="row justify-content-between">
+                    <div class="col-7">Синицин Илья Сергеевич</div>
+                    <div class="col-2 center">4</div>
+                </div>
+                <div class="row justify-content-between">
+                    <div class="col-7">Воробьев Игорь Андреевич</div>
+                    <div class="col-2 center">5</div>
+                </div>
+                <div class="col-12 point ti-more-alt"></div>
             </div>
             <div class="table-res">
                 <div class="row justify-content-between">
@@ -136,41 +166,41 @@
             <div class="table-res">
                 <div class="row justify-content-end caption cell">
                     <div class="th col-8 row justify-content-around">
-                        <div class="col-4">Практика</div>
-                        <div class="col-4">Курсовые</div>
-                        <div class="col-4 done">ВКР/дипломная работа</div>
+                        <div class="col-4" id="cap-1" onclick="show(1)">Практика</div>
+                        <div class="col-4" id="cap-2" onclick="show(2)">Курсовые</div>
+                        <div class="col-4 done" id="cap-3" onclick="show(3)">ВКР/дипломная работа</div>
                     </div>
                 </div>
                 <div class="row justify-content-around cell">
                     <div class="col-4" style="text-align: left !important;">Наименование</div>
-                    <div class="col-8 row justify-content-around">
-                        <div class="col-4"><span>-</span></div>
-                        <div class="col-4"><span>-</span></div>
-                        <div class="col-4 done-item"><span>5</span></div>
+                    <div class="tdh col-8 row justify-content-around">
+                        <div class="col-4 cell-1"><span>-</span></div>
+                        <div class="col-4 cell-2"><span>-</span></div>
+                        <div class="col-4 done-item cell-3"><span>5</span></div>
                     </div>
                 </div>
                 <div class="row justify-content-around cell">
                     <div class="col-4" style="text-align: left !important;">Наименование</div>
-                    <div class="col-8 row justify-content-around">
-                        <div class="col-4"><span>-</span></div>
-                        <div class="col-4"><span>-</span></div>
-                        <div class="col-4 done-item"><span>5</span></div>
+                    <div class="tdh col-8 row justify-content-around">
+                        <div class="col-4 cell-1"><span>-</span></div>
+                        <div class="col-4 cell-2"><span>-</span></div>
+                        <div class="col-4 done-item cell-3"><span>5</span></div>
                     </div>
                 </div>
                 <div class="row justify-content-around cell">
                     <div class="col-4" style="text-align: left !important;">Наименование</div>
-                    <div class="col-8 row justify-content-around">
-                        <div class="col-4"><span>-</span></div>
-                        <div class="col-4"><span>-</span></div>
-                        <div class="col-4 done-item"><span>5</span></div>
+                    <div class="tdh col-8 row justify-content-around">
+                        <div class="col-4 cell-1"><span>-</span></div>
+                        <div class="col-4 cell-2"><span>-</span></div>
+                        <div class="col-4 done-item cell-3"><span>5</span></div>
                     </div>
                 </div>
                 <div class="row justify-content-around cell">
                     <div class="col-4" style="text-align: left !important;">Наименование</div>
-                    <div class="col-8 row justify-content-around">
-                        <div class="col-4"><span>-</span></div>
-                        <div class="col-4"><span>-</span></div>
-                        <div class="col-4 done-item"><span>5</span></div>
+                    <div class="tdh col-8 row justify-content-around">
+                        <div class="col-4 cell-1"><span>-</span></div>
+                        <div class="col-4 cell-2"><span>-</span></div>
+                        <div class="col-4 done-item cell-3"><span>5</span></div>
                     </div>
                 </div>
             </div>
@@ -180,6 +210,7 @@
     <script type="text/javascript" src="js/jquery-3.3.1.slim.min.js"></script>
     <script type="text/javascript" src="js/popper.min.js"></script>
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="projectjs/corp.js"></script>
 </body>
 
 </html>

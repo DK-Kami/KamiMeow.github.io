@@ -54,3 +54,40 @@ function change(bool) {
         }
     }
 }
+
+function sort(array) {
+    arr = [];
+    var i = 0;
+    for (const child of array) {
+        if (child.nodeName == "DIV") {
+            if (i != 0) arr[i - 1] = child;
+            i++;
+        }
+    }
+    return arr;
+}
+
+function show(id) {
+    cell1 = document.getElementsByClassName("cell-1");
+    cell2 = document.getElementsByClassName("cell-2");
+    cell3 = document.getElementsByClassName("cell-3");
+
+    for (const cell of cell1) { cell.classList = "col-4 cell-1" };
+    for (const cell of cell2) { cell.classList = "col-4 cell-2" };
+    for (const cell of cell3) { cell.classList = "col-4 cell-3" };
+
+    document.getElementById("cap-1").classList = "col-4";
+    document.getElementById("cap-2").classList = "col-4";
+    document.getElementById("cap-3").classList = "col-4";
+
+    if (id == 1) {
+        for (const cell of cell1) { cell.classList = "col-4 done-item cell-1" };
+        document.getElementById("cap-1").classList = "col-4 done";
+    } else if (id == 2) {
+        for (const cell of cell2) { cell.classList = "col-4 done-item cell-2" };
+        document.getElementById("cap-2").classList = "col-4 done";
+    } else {
+        for (const cell of cell3) { cell.classList = "col-4 done-item cell-3" };
+        document.getElementById("cap-3").classList = "col-4 done";
+    }
+}

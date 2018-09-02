@@ -11,3 +11,44 @@
 .graphic>img {
     width: 100%;
 }
+
+.table-stud>div>.th {
+    border: 0;
+}
+
+.caption {
+    text-align: left !important;
+    margin-bottom: 0
+}
+
+.center {
+    text-align: center !important;
+}
+
+.table-stud>hr {
+    margin-top: -5px;
+    margin-bottom: 10px;
+}
+
+.table-stud>div {
+    padding: 0 15px;
+}
+
+.table-stud {
+    margin-bottom: 25px !important;
+}
+
+.point {
+    margin-top: 10px;
+    text-align: center;
+    font-size: 30px;
+    color: #777;
+}
+
+.cell>div>div {
+    text-align: center;
+}
+
+.tdh {
+    padding-left: 0;
+}
