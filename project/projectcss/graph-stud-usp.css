@@ -212,6 +212,25 @@
     text-align: center;
 }
 
+.cell>.th>div {
+    padding-bottom: 5px;
+    cursor: pointer;
+    transition: .1s all;
+    text-align: center;
+}
+
+.cell>div>div>span {
+    display: none;
+}
+
+.cell>.th {
+    padding-left: 0 !important;
+}
+
+.done-item>span {
+    display: block !important;
+}
+
 .non {
     text-align: left;
 }
@@ -226,8 +245,10 @@
     padding-bottom: 5px;
 }
 
-.done {
+.done,
+.cell>.th>div:hover {
     border-bottom: 4px solid #747373;
+    transition: .1s all;
 }
 
 .caption {
