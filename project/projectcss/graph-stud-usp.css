@@ -209,6 +209,11 @@
     border-bottom: 1px solid #747373;
     margin-bottom: 10px;
     padding-left: 20px;
+    text-align: center;
+}
+
+.non {
+    text-align: left;
 }
 
 .td {
@@ -223,7 +228,6 @@
 
 .done {
     border-bottom: 4px solid #747373;
-    text-align: center;
 }
 
 .caption {
