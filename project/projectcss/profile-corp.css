@@ -267,3 +267,63 @@ span[class="data"] {
 .btn:focus {
     box-shadow: 0 !important;
 }
+
+
+/*DB*/
+
+.corp {
+    padding: 0 40px;
+}
+
+.row-logo>div {
+    margin-bottom: 35px;
+    padding: 0 10px;
+    transition: .2s all;
+}
+
+.row-logo>div:hover {
+    transform: scale(1.2, 1.2);
+    transform-origin: center;
+    transition: .2s all;
+}
+
+.corp-logo {
+    padding: 0 10px;
+}
+
+.corp-logo>img {
+    width: 100%;
+}
+
+.caption {
+    text-align: center;
+    color: #4f5660;
+    line-height: 20px;
+    font-size: 14px !important;
+}
+
+.name-corp {
+    margin-bottom: 25px;
+    font-size: 20px;
+    color: #4f5660
+}
+
+.semestr {
+    padding: 0 15px;
+}
+
+.semestr>div {
+    text-align: center;
+    padding: 0;
+}
+
+.last-semestr {
+    margin-right: 0 !important;
+}
+
+.semestr>div:hover,
+.semestr-active {
+    color: #777;
+    cursor: pointer;
+    border-bottom: 3px solid #555;
+}
