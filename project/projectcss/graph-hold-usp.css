@@ -1,0 +1,124 @@
+/*MAIN*/
+
+body,
+html,
+div {
+    padding: 0;
+    margin: 0;
+}
+
+body,
+html {
+    height: 100%;
+}
+
+hr {
+    margin-top: 0px;
+    border: 1px solid #747373;
+}
+
+body {
+    background-color: #eaeaea;
+}
+
+a,
+a:hover,
+a:visited {
+    text-decoration: none;
+    color: #777777 !important;
+}
+
+input[type="search"] {
+    width: 100%;
+    background-color: #eaeaea;
+    outline-offset: 0;
+    border: 1px solid #777777;
+    border-radius: 5px;
+    font-size: 20px;
+    padding: 5px 10px;
+    color: #777;
+    padding-right: 5%;
+}
+
+.search>span {
+    font-size: 20px;
+    position: relative;
+    top: -30px;
+    right: -96%;
+}
+
+
+/*TABLE*/
+
+th {
+    font-weight: normal;
+    color: #878787;
+    padding-right: 20px;
+    padding-bottom: 15px;
+}
+
+td {
+    color: #555;
+    padding-bottom: 15px;
+}
+
+
+/*ASIDE*/
+
+.left-menu {
+    width: 60px;
+    height: 100vh;
+    position: fixed;
+    background-color: #161616;
+    z-index: 10;
+}
+
+.active {
+    background-color: #262626;
+}
+
+.ava {
+    height: 50px;
+    margin: 10px 5px;
+    border-radius: 50px;
+    width: 50px;
+    background-color: #4f5660;
+    overflow: hidden;
+}
+
+.ava>img {
+    width: 100% !important;
+    transform: translateY(-3px) !important;
+}
+
+.left-menu>div {
+    height: 50px;
+    color: #777777;
+    font-size: 30px;
+    transition: .1s all;
+}
+
+.left-menu>div>span,
+.left-menu>div>a>span {
+    cursor: pointer;
+    padding: 10px 15px;
+}
+
+.left-menu>div>span:hover,
+.left-menu>div>a>span:hover {
+    background-color: #262626;
+    transition: .1s all;
+}
+
+.auto {
+    height: 50% !important;
+}
+
+
+/*CONTENT*/
+
+.con {
+    width: auto;
+    height: auto;
+    padding: 0 !important;
+}

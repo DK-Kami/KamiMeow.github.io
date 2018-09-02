@@ -110,6 +110,7 @@ td {
 
 .header>img {
     width: 100%;
+    overflow: hidden;
 }
 
 .contacts {
@@ -139,6 +140,14 @@ td {
     width: 10%;
 }
 
+.data {
+    margin-bottom: 15px;
+}
+
+.right {
+    text-align: right !important;
+}
+
 #doc {
     width: 40%;
     white-space: normal;
@@ -151,7 +160,7 @@ td {
 }
 
 #dataend {
-    margin-bottom: 50px;
+    margin-bottom: 0px;
 }
 
 span[class="data"] {
@@ -162,7 +171,7 @@ span[class="data"] {
 .ico {
     display: inline-block;
     font-size: 40px;
-    width: 10%;
+    width: 8%;
     margin-right: 5%;
     text-align: center;
 }
@@ -231,6 +240,30 @@ span[class="data"] {
 
 .name {
     font-size: 30px;
-    margin-bottom: -10px;
     font-weight: bold;
+}
+
+.btn-secondary {
+    color: #e2dedb;
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    font-size: 18px;
+    margin-left: -10px !important;
+}
+
+.btn-secondary:hover {
+    color: #e2dedb;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.btn-secondary:active,
+.btn-secondary:focus {
+    color: #e2dedb !important;
+    background-color: rgba(0, 0, 0, 0)!important;
+    border: 0 !important;
+    box-shadow: 0 !important;
+}
+
+.btn:focus {
+    box-shadow: 0 !important;
 }

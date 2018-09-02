@@ -87,8 +87,8 @@ td {
 }
 
 .ava>img {
-    width: 100px;
-    transform: translateX(-25px);
+    width: 100%;
+    transform: translateY(-3px);
 }
 
 .left-menu>div {
@@ -150,7 +150,6 @@ td {
 
 .contacts>.h1 {
     font-size: 25px;
-    margin-top: 5px;
     float: left;
     display: block;
 }
@@ -160,7 +159,7 @@ td {
 }
 
 #dataend {
-    margin-bottom: 50px;
+    margin-bottom: 40px;
 }
 
 span[class="data"] {
@@ -209,6 +208,16 @@ span[class="data"] {
 
 .photo>div>.h1 {
     font-size: 30px;
+}
+
+.data {
+    line-height: 20px;
+    margin-bottom: 25px;
+}
+
+#right {
+    text-align: right;
+    width: 50%;
 }
 
 .icons {
@@ -314,4 +323,8 @@ span[class="data"] {
     cursor: pointer;
     padding: 0 20px;
     padding-right: 50px;
+}
+
+.map {
+    margin-bottom: 50px;
 }

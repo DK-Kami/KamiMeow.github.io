@@ -10,6 +10,7 @@
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="css/themify-icons/themify-icons.css">
     <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="projectcss/profile-hold.css">
     <link rel="stylesheet" href="projectcss/profile-corp.css">
 </head>
 
@@ -22,6 +23,7 @@
             <hr>
             <div class="home"><span class="ti-home active"></span></div>
             <div class="graph"><span class="ti-bar-chart-alt"></span></div>
+            <div class="graph"><a href="graph-corp-usp.html"><span class="ti-bar-chart-alt"></span></a></div>
             <div class="calendar"><span class="ti-calendar"></span></div>
             <div class="auto"></div>
             <div class="off"><a href="auth.html"><span class="ti-power-off"></span></a></div>
@@ -34,25 +36,56 @@
                 <div class="contacts">
                     <div class="h1">Личные данные</div>
                     <hr>
-                    <!-- <span class="data">16.09.1998</span>
-                    <div class="data">Дата рождения</div>
-                    <span class="data">Женский</span>
-                    <div class="data">Пол</div>
-                    <span class="data">г. Москва</span>
-                    <div class="data" id="dataend">Место рождения</div> -->
+                    <div class="row">
+                        <div class="col-6 data">Курирующая структура</div>
+                        <div class="col-6 right">
+                            <div class="btn-group dropright">
+                                <button type="button" class="btn btn-secondary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <span id="sent">Росатом</span>
+                                    <span class="sr-only">Toggle Dropright</span>
+                                </button>
+                                <div class="dropdown-menu">
+                                    <span class="dropdown-item" onclick="sent('Росатом')">Росатом</span>
+                                    <span class="dropdown-item" onclick="sent('Роскосмос')">Роскосмос</span>
+                                    <span class="dropdown-item" onclick="sent('Ростех')">Ростех</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-6 data">Ответственный за целевое обучение</div>
+                        <div class="col-6 right">Васильев Андрей Макеевич</div>
+                    </div>
+                    <div class="row">
+                        <div class="col-6 data">Местоположение</div>
+                        <div class="col-6 right">г. Москва</div>
+                    </div>
+                    <div class="row">
+                        <div class="col-6 data">Дата основания</div>
+                        <div class="col-6 right">16.09.1998</div>
+                    </div>
+
+                    <span class="data"></span>
+                    <div class="data"></div>
+                    <span class="data right"></span>
+                    <span class="data"></span>
+                    <span class="data"></span>
+                    <div class="data"></div>
+                    <span class="data"></span>
+                    <div class="data" id="dataend"></div>
 
                     <div class="h1">Контакты</div>
                     <hr>
                     <div class="ico">
                         <i class="fa fa-mobile" aria-hidden="true"></i>
-                        <i class="fa fa-vk" aria-hidden="true"></i>
+                        <span class="ti-link"></span>
                         <i class="fa fa-envelope-o" aria-hidden="true"></i>
                     </div>
                     <div class="ico-data">
                         <div>+7 (999) 999-99-99</div>
                         </i>
                         <div class="w-100"></div>
-                        <div>/fshlmnask</div>
+                        <div>https://fshlmnask.com</div>
                         <div class="w-100"></div>
                         <div id="dataend">alalals@mail.com</div>
                     </div>
@@ -73,11 +106,13 @@
                     </div>
                 </div>
             </div>
+
         </div>
     </div>
-    <script type="text/javascript" src="js/jquery-3.3.1.slim.min.js"></script>
+    <script type="text/javascript" src="js/jq.js"></script>
     <script type="text/javascript" src="js/popper.min.js"></script>
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="projectjs/corp.js"></script>
 </body>
 
 </html>
