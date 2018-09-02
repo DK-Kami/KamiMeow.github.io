@@ -87,7 +87,12 @@
                         <input type="search" value="" placeholder="Поиск по карте">
                         <span class="ti-search"></span>
                     </div>
-                    <div class="map"><img src="img/map.jpg" alt=""></div>
+                    <div class="map">
+                        <!-- <img src="img/map.jpg" alt=""> -->
+                        <!-- <script style="width: 100%; height: 500px;" type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Aea23184741eac51c9d1ee042317c34717ba98968bc51f69d9a890c546c357940&amp;width=929&amp;height=456&amp;lang=ru_RU&amp;scroll=true"></script> -->
+                        <div id="YMapsID" style="width: 100%; height: 500px;"></div>
+
+                    </div>
 
                     <div class="row justify-content-between">
                         <span class="navig">Наименование предприятий</span>
@@ -121,6 +126,51 @@
     <script type="text/javascript" src="js/jquery-3.3.1.slim.min.js"></script>
     <script type="text/javascript" src="js/popper.min.js"></script>
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+    <script type="text/javascript">
+        ymaps.ready(function() {
+            var myMap = new ymaps.Map("YMapsID", {
+                center: [66.5, 100],
+                zoom: 2.5
+            });
+
+            ymaps.borders.load('RU', {
+                lang: "ru",
+                quality: 2
+            }).then(function(geojson) {
+                for (var i = 0; i < geojson.features.length; i++) {
+                    var geoObject = new ymaps.GeoObject(geojson.features[i]);
+                    myMap.geoObjects.add(geoObject);
+                }
+            });
+            var myPlacemark = new ymaps.Placemark([55.45, 37.37], {
+                balloonContentHeader: 'Москва',
+                // balloonContentBody: 'шото писать,'
+            });
+            myMap.geoObjects.add(myPlacemark);
+
+            myPlacemark = new ymaps.Placemark([59.56, 30.19], {
+                balloonContentHeader: 'Cанкт-петербург'
+            });
+            myMap.geoObjects.add(myPlacemark);
+
+            myPlacemark = new ymaps.Placemark([54.43, 20.31], {
+                balloonContentHeader: 'Калининград'
+            });
+            myMap.geoObjects.add(myPlacemark);
+
+            myPlacemark = new ymaps.Placemark([43.8, 131.54], {
+                balloonContentHeader: 'Владивосток'
+            });
+            myMap.geoObjects.add(myPlacemark);
+
+            myPlacemark = new ymaps.Placemark([54.59, 73.22], {
+                balloonContentHeader: 'Омск'
+            });
+            myMap.geoObjects.add(myPlacemark);
+        });
+    </script>
 </body>
 
 </html>
