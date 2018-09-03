@@ -1,7 +1,114 @@
 .con {
+    width: auto;
+    height: auto;
+    padding: 0 !important;
+    padding-top: 20px !important;
     margin-left: 60px;
+    color: #444;
+}
+
+.con>div {
+    width: 100%;
+    padding-left: 40px;
+    margin-bottom: 5px;
+    font-size: 18px;
 }
 
 .h1 {
     font-size: 25px;
+}
+
+.icons {
+    font-size: 30px;
+    position: relative;
+    top: -7px;
+    text-align: left;
+}
+
+.setting {
+    text-align: right;
+}
+
+.search-main {
+    text-align: center;
+}
+
+.about {
+    padding: 0;
+    padding-left: 10%;
+    position: relative;
+    top: -5px;
+    width: 90%;
+}
+
+.search>span {
+    top: -32px !important;
+    left: 55%;
+}
+
+
+/*MAIL*/
+
+.mail {
+    position: absolute;
+    left: 25%;
+    bottom: 20px;
+    height: auto;
+    background-color: #fff;
+    border-radius: 5px;
+}
+
+.mail-header {
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #444;
+}
+
+.mail-content {
+    height: 510px;
+    position: relative;
+}
+
+.mail-main {
+    padding: 20px 25px;
+    position: absolute;
+    bottom: 0;
+}
+
+.mail-item {
+    position: relative;
+    left: 350%;
+    text-align: right;
+}
+
+.mail-item>.text {
+    background-color: #dddcee;
+    border-radius: 5px;
+}
+
+.enemy {
+    left: 0%;
+    text-align: left;
+}
+
+.enemy>.text {
+    background-color: #ebebeb;
+}
+
+.mail-item>.caption {
+    font-size: 10px !important;
+    font-weight: bold
+}
+
+.time {
+    font-size: 8px;
+    position: relative;
+    top: -13px;
+    left: -5px;
+    color: #777;
+}
+
+.enemy>.time {
+    left: 5px;
 }
