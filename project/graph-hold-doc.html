@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="icon" href="img/favicon.png">
+    <title>Аналитика</title>
+
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/themify-icons/themify-icons.css">
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="projectcss/all-student.css">
+    <link rel="stylesheet" href="projectcss/graph-stud-usp.css">
+    <link rel="stylesheet" href="projectcss/profile-hold.css">
+    <link rel="stylesheet" href="projectcss/graph-corp-usp.css">
+    <link rel="stylesheet" href="projectcss/profile-corp.css">
+    <link rel="stylesheet" href="projectcss/graph-stud-doc.css">
+    <link rel="stylesheet" href="projectcss/graph-corp-doc.css">
+</head>
+
+<body>
+    <div id="app">
+        <aside class="left-menu">
+            <div class="ava">
+                <img src="img/ava-corp.jpg" alt="">
+            </div>
+            <hr>
+            <div class="home"><a href="profile-corp.html"><span class="ti-home"></span></a></div>
+            <div class="graph"><a href="graph-hold-usp.html"><span class="ti-bar-chart-alt active"></span></a></div>
+            <div class="graph"><span class="fa fa-commenting-o" aria-hidden="true"></span>
+            </div>
+            <div class="calendar"><span class="ti-calendar"></span></div>
+            <div class="auto"></div>
+            <div class="off"><a href="auth.html"><span class="ti-power-off"></span></a></div>
+        </aside>
+        <div class="analytic-nav">
+            <div class="h1">Аналитика</div>
+            <hr>
+            <div class="nav"><a href="graph-corp-usp.html"><span>Отчёт об успеваемости</span></a></div>
+            <div class="nav" id="lastnav"><a href="graph-corp-ancom.html">Анализ коммуникации</a></div>
+            <div class="nav"><a href="graph-corp-support.html">Меры соц. поддержки</a></div>
+            <div class="nav"><span>Договор о целевом обучении</span></div>
+            <span class="ti-angle-left" id="arrow" style="top: -45px"></span>
+        </div>
+
+        <div class="container-fluid con">
+            <div class="h1">Договор о целевом обучении</div>
+            <hr>
+            <div class="about" style="padding-bottom: 0; padding-top: 0; margin-bottom: 0">
+                <div class="search">
+                    <input type="search" value="" placeholder="Поиск">
+                    <span class="ti-search"></span>
+                </div>
+                <span>Год</span>
+                <button type="button" style="margin-left: -5px; border: 0;" class="btn btn-danger dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <span class=" sr-only">Toggle Dropdown</span>
+                </button>
+                <span id="yearChange" style="color: #777; text-decoration: underline #777"></span>
+                <div class="dropdown-menu">
+                    <div class="dropdown-item" onclick="sent( 'yearChange', '2015')">2015</div>
+                    <div class="dropdown-item" onclick="sent( 'yearChange', '2016')">2016</div>
+                    <div class="dropdown-item" onclick="sent( 'yearChange', '2017')">2017</div>
+                    <div class="dropdown-item" onclick="sent( 'yearChange', '2018')">2018</div>
+                </div>
+            </div>
+            <div class="list row justify-content-between">
+                <div class="col-1 caption-left">ФИО</div>
+                <div class="col-4 caption-right">Дата заключения договора</div>
+            </div>
+            <div>
+                <hr>
+            </div>
+            <div class="list">
+                <div class="row item-list justify-content-between">
+                    <div class="col-6 row">
+                        <div class="col-1"><i class="fa fa-file-text-o" aria-hidden="true"></i></div>
+                        <div class="col-9">Иванова Мария Ивановна</div>
+                    </div>
+                    <div class="col-2 date">29.08.2016</div>
+                </div>
+                <div class="row item-list justify-content-between">
+                    <div class="col-6 row">
+                        <div class="col-1"><i class="fa fa-file-text-o" aria-hidden="true"></i></div>
+                        <div class="col-9">Иванова Мария Ивановна</div>
+                    </div>
+                    <div class="col-2 date">29.08.2016</div>
+                </div>
+                <div class="row item-list justify-content-between">
+                    <div class="col-6 row">
+                        <div class="col-1"><i class="fa fa-file-text-o" aria-hidden="true"></i></div>
+                        <div class="col-9">Иванова Мария Ивановна</div>
+                    </div>
+                    <div class="col-2 date">29.08.2016</div>
+                </div>
+                <div class="row item-list justify-content-between">
+                    <div class="col-6 row">
+                        <div class="col-1"><i class="fa fa-file-text-o" aria-hidden="true"></i></div>
+                        <div class="col-9">Иванова Мария Ивановна</div>
+                    </div>
+                    <div class="col-2 date">29.08.2016</div>
+                </div>
+                <div class="row item-list justify-content-between">
+                    <div class="col-6 row">
+                        <div class="col-1"><i class="fa fa-file-text-o" aria-hidden="true"></i></div>
+                        <div class="col-9">Иванова Мария Ивановна</div>
+                    </div>
+                    <div class="col-2 date">29.08.2016</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="js/jq.js"></script>
+    <script type="text/javascript" src="js/popper.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="projectjs/corp.js"></script>
+</body>
+
+</html>
