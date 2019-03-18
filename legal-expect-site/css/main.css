@@ -1,0 +1,96 @@
+/* font-face */
+@font-face {
+  font-family: 'Gulim';
+  src: url('../assets/fonts/gulim.ttf');
+}
+
+/* main */
+html,
+body {
+  font-family: 'Gulim';
+  padding: 0;
+  margin: 0;
+}
+
+.navigation {
+  font-size: 20px;
+}
+.nav-item > a {
+  color: #000;
+  cursor: pointer;
+  transition: 0.3s all;
+}
+.nav-item > a:hover {
+  color: #00000080;
+  text-decoration: none;
+  transition: 0.3s all;
+}
+
+.vertical-divider {
+  width: 2px;
+  background-color: #000;
+}
+
+.phone {
+  font-size: 1.2em;
+}
+
+.carousel-item,
+.carousel-item > div {
+  width: 100%;
+  height: 400px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.card-title {
+  font-size: 25px;
+}
+.imageCard {
+  float: left;
+  width: 200px;
+  height: 200px;
+}
+
+.contacts {
+  height: auto;
+}
+
+footer {
+  background-color: #333;
+  color: white;
+}
+.up-footer {
+  color: #aaa;
+  padding: 35px;
+}
+.up-footer a {
+  color: #aaa;
+  font-size: 14px;
+}
+
+.bottom-footer {
+  background-color: #111;
+  padding: 10px;
+  color: #555;
+  font-size: 14px;
+}
+.bottom-footer > a {
+  color: #555;
+  text-decoration: underline;
+  transition: .3s all;
+}
+.bottom-footer > a:hover {
+  color: #777;
+  transition: .3s all;
+}
+
+.icons-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.icons-list > .icon {
+  margin: 0 25px;
+  display: inline;
+}
