@@ -58,6 +58,11 @@ footer {
   background-size: cover;
   background-repeat: no-repeat;
 }
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
+  height: 45px !important;
+  width: 45px !important;
+}
 
 .card-title {
   font-size: 25px;
